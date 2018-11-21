@@ -1,0 +1,45 @@
+body{
+    font-family: 'Prompt'
+}
+.logo{
+    float: left;
+}
+.logo a{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    float: left;
+}
+nav ul li:first-child{
+    margin-top: 17px;
+    margin-right: 48px;
+}
+nav ul li:last-child{
+    margin-right: 5em;
+}
+nav ul li{
+    padding: 6px;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+nav ul li{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+nav ul li span{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.containerdash{
+    padding: 7rem;
+}

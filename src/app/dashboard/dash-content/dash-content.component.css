@@ -1,0 +1,17 @@
+.rowheaddashcontent{
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.rowbtn{
+    text-align: center;
+}
+.btnadduser{
+    letter-spacing: 2px;
+}
+.rowtable{
+    margin-top: 1rem;
+}
+.blank{
+    margin-left:5px;
+}
