@@ -1,3 +1,25 @@
-<p>
-  add-money-user works!
-</p>
+<div class="rowheaddashcontent row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <a class="headtext">เติมเงินสมาชิก</a>
+  </div>
+  <div class="col-2"></div>
+</div>
+<div class="rowaddmoneyform row">
+  <div class="col-3"></div>
+  <div class="col-6">
+      <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">{{user_spec_name}}</h4>
+            <form (submit)="addingmoney($event)">
+              <label for="showmoneyuser">ยอดเงินคงเหลือ(บาท)</label>
+              <input type="text" class="form-control" value="{{user_spec_money}}" readonly>
+              <label for="addmoney">เติมเงินจำนวน(บาท)</label>
+              <input type="text" class="form-control" id="newmoney">
+              <input type="submit" class="submitmoneybtn btn btn-warning" value="เติมเงิน">
+            </form>
+          </div>
+        </div>
+  </div>
+  <div class="col-3"></div>
+</div>

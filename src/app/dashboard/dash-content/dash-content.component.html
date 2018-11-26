@@ -29,7 +29,7 @@
               <th scope="row">{{i+1}}</th>
               <td>{{u.name}}</td>
               <td>{{u.money}}</td>
-              <td><button class="addmoneybtn btn btn-warning">+</button><span class="blank"></span><button class="deluserbtn btn btn-danger">ลบผู้ใช้</button></td>
+              <td><button class="addmoneybtn btn btn-warning" (click)="moneyAdd(u.id)">+ เพิ่มเงินผู้ใช้</button><span class="blank"></span><button class="deluserbtn btn btn-danger">ลบผู้ใช้</button></td>
             </tr>
           </tbody>
         </table>

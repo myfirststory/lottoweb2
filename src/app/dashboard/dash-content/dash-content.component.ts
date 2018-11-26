@@ -3,6 +3,7 @@ import {Router} from '@angular/router';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { GlobalVarible } from 'src/models/models';
 import { User } from 'src/models/user';
+import { typeWithParameters } from '@angular/compiler/src/render3/util';
 
 @Component({
   selector: 'app-dash-content',
@@ -23,6 +24,21 @@ export class DashContentComponent implements OnInit {
 
 addUser(){
   this.router.navigateByUrl("dashboard/adduser");
+}
+
+moneyAdd(userid){
+for (var number in this.user) {
+  if (this.user.hasOwnProperty(number)) {
+    var element = this.user[number];
+    if(userid==element.id){
+     console.log(element.name)
+     sessionStorage.setItem("userid",element.id)
+     sessionStorage.setItem("username",element.name)
+     sessionStorage.setItem("usermoney",element.money)
+     this.router.navigate(['/dashboard/addmoney'])
+    }
+  }
+}
 }
 
 }

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashContentComponent } from './dash-content/dash-content.component';
@@ -12,4 +12,4 @@ import { AddMoneyUserComponent } from './add-money-user/add-money-user.component
     ],
     declarations: [DashContentComponent,AddUserComponent,AddMoneyUserComponent]
   })
-  export class DashboardModule {}
+  export class DashboardModule{}

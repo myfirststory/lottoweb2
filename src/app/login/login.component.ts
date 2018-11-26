@@ -19,10 +19,7 @@ export class LoginComponent implements OnInit {
     const target=e.target
     const username = target.querySelector('#username').value
     const password = target.querySelector('#password').value
-    if(username=="admin"&& password=="1234"){
-      this.router.navigate(['/dashboard'])
-      sessionStorage.setItem('loggedin',"1")
-    }
+    this.auth.checkUser(username,password)
   }
 
 }
