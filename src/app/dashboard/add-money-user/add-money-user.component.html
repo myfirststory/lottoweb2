@@ -10,13 +10,13 @@
   <div class="col-6">
       <div class="card">
           <div class="card-body">
-            <h4 class="card-title">{{user_spec_name}}</h4>
+            <h4 class="card-title">{{username}}</h4>
             <form (submit)="addingmoney($event)">
               <label for="showmoneyuser">ยอดเงินคงเหลือ(บาท)</label>
-              <input type="text" class="form-control" value="{{user_spec_money}}" readonly>
+              <input type="text" class="form-control" value="{{usermoney}}" readonly>
               <label for="addmoney">เติมเงินจำนวน(บาท)</label>
               <input type="text" class="form-control" id="newmoney">
-              <input type="submit" class="submitmoneybtn btn btn-warning" value="เติมเงิน">
+              <input type="submit" class="submitmoneybtn btn btn-warning"value="เติมเงิน">
             </form>
           </div>
         </div>

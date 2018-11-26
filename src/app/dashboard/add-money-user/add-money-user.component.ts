@@ -12,7 +12,7 @@ import { MoneyService } from 'src/app/services/money.service';
 })
 export class AddMoneyUserComponent implements OnInit {
   user:User;
-
+newmoneyout=0;
   constructor(private router: Router,private http:HttpClient,private money:MoneyService) { }
 
   ngOnInit() {
@@ -21,14 +21,14 @@ export class AddMoneyUserComponent implements OnInit {
         this.user = data;
     });
   }
-  user_spec_name = sessionStorage.getItem("username")
-  user_spec_money = sessionStorage.getItem("usermoney")
-
+  userid=this.money.getUserId()
+  username=this.money.getUserName()
+  usermoney=this.money.getUserMoney()
   addingmoney(e){
     e.preventDefault()
     const target = e.target
     const newmoney=target.querySelector("#newmoney").value
-    this.money.addUserMoney(newmoney)
+    this.newmoneyout= +newmoney
+    this.money.addMoney(newmoney,this.userid)
   }
-
 }
